@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 2px 1px 5px rgb(50, 49, 49);
+}
+
+.background {
+    background-image: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 400px rgba(0,0,0,0.6) inset;
+}
+
+.cloud-bottom {
+    background-size: 99vh 45vh;
+    top: 70vh;
+    width: 100%;
+    height: 45vh;
+    background-repeat: repeat-x;
+    -webkit-LinkedIn: cloud_b 12s linear infinite forwards;
+    -moz-animation: cloud_b 12s linear infinite forwards;
+    animation: cloud_b 12s linear infinite forwards;
+}
+
+
+.cloud-middle {
+    background-size: 60vh 25vh;
+    top: 30vh;
+    width: 100%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    -webkit-animation: cloud_m 70s linear infinite forwards;
+    -moz-animation: cloud_m 70s linear infinite forwards;
+    animation: cloud_m 70s linear infinite forwards;
+}
+
+.cloud-top1 {
+    background-size: 26vh 12vh;
+    top: 5vh;
+    width: 100%;
+    height: 12vh;
+    background-repeat: no-repeat;
+    -webkit-animation: cloud_t1 45s linear forwards;
+    -moz-animation: cloud_t1 45s linear forwards;
+    animation: cloud_t1 45s linear  forwards;
+}
+
+.cloud-top2 {
+    background-size: 26vh 12vh;
+    top: 5vh;
+    width: 100%;
+    height: 12vh;
+    background-position-x: -26vh;
+    background-repeat: no-repeat;
+    -webkit-animation: cloud_t2 110s linear infinite forwards;
+    -moz-animation: cloud_t2 110s linear infinite forwards;
+    animation: cloud_t2 110s linear infinite forwards;
+}
+
+.cloud {
+    position: absolute;
+    background-image: url("../img/cloud.png");
+    opacity: 0.3;
+}
+
+.container {
+    max-width: 960px;
+    display: grid;
+    position: absolute;
+    top: 35%;
+    left: 50%;                 
+    transform: translate(-50%, -35%);
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+li:hover a .spin {
+    -webkit-animation: rot 4s infinite;
+    -moz-animation: rot 4s infinite;
+    animation: rot 4s infinite;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin: 0px;
+    opacity: 0;
+    line-height: 1.5;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+}
+
+ul {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    animation-delay: 1s;
+    list-style-type: none;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+    filter: grayscale(100%);
+}
+
+.delay-55{
+    animation-delay: 55s;
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes rot {
+    from {transform: rotateY(0deg);}
+    20% {transform: rotateY(88deg);}
+    40% {transform: rotateY(0deg);}
+    to {transform: rotateY(0deg);}
+}
+
+@-moz-keyframes rot {
+    from {transform: rotateY(0deg);}
+    20% {transform: rotateY(88deg);}
+    40% {transform: rotateY(0deg);}
+    to {transform: rotateY(0deg);}
+}
+
+@keyframes rot {
+    from {transform: rotateY(0deg);}
+    20% {transform: rotateY(88deg);}
+    40% {transform: rotateY(0deg);}
+    to {transform: rotateY(0deg);}
+}
+
+
+@-webkit-keyframes cloud_b {
+    from {background-position-x: 0vh;}
+    to {background-position-x: 99vh;}
+}
+
+@-moz-keyframes cloud_b {
+    from {background-position-x: 0vh;}
+    to {background-position-x: 99vh;}
+}
+
+@keyframes cloud_b {
+    from {background-position-x: 0vh;}
+    to {background-position-x: 99vh;}
+}
+
+@-webkit-keyframes cloud_m {
+    from {background-position-x:-60vh;}
+    to {background-position-x:100vw;}
+}
+
+@-moz-keyframes cloud_m {
+    from {background-position-x:-60vh;}
+    to {background-position-x:100vw;}
+}
+
+@keyframes cloud_m {
+    from {background-position-x:-60vh;}
+    to {background-position-x:100vw;}
+}
+
+@-webkit-keyframes cloud_t1 {
+    from {background-position-x:70vw;}
+    to {background-position-x: 100vw;}
+   
+}
+
+@-moz-keyframes cloud_t1 {
+    from {background-position-x:70vw;}
+    to {background-position-x: 100vw;}
+}
+
+@keyframes cloud_t1 {
+    from {background-position-x:70vw;}
+    to {background-position-x: 100vw;}
+}
+
+@-webkit-keyframes cloud_t2 {
+    from {background-position-x: -26vh;}
+    to {background-position-x: 100vw;}
+   
+}
+
+@-moz-keyframes cloud_t2 {
+    from {background-position-x: -26vh;}
+    to {background-position-x: 100vw;}
+}
+
+@keyframes cloud_t2 {
+    from {background-position-x:-26vh;}
+    to {background-position-x: 100vw;}
+}
+
+
+
