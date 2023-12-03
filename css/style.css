@@ -73,6 +73,7 @@ body {
 
 .container {
     max-width: 960px;
+    min-width: 400px;
     display: grid;
     position: absolute;
     top: 35%;
